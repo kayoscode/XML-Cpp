@@ -179,7 +179,7 @@ static bool loadEscapeSequence(char* xml, uint32_t& index, uint32_t size, XMLLex
 
 bool XMLLexer::getNextToken(XMLLexer::Token& ret) {
     skipWhiteSpace(xml, index, size);
-    char ch = xml[index];
+    //char ch = xml[index];
 
     if(index >= size) {
         ret.begin = nullptr;
